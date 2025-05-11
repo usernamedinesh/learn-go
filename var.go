@@ -30,4 +30,18 @@ func main() {
 	fmt.Println("salary: ", salary)
 	fmt.Println("city: ", city)
 	fmt.Println("pi: ", pi)
+
+	const typeAGE int = 24
+	const unTypeAge = 24
+	fmt.Println(unTypeAge == typeAGE) // true
+
+	// go does have enum but
+	const (
+		sun  = iota + 1 // 1
+		mon             // 2
+		tues = 10
+		wed
+	)
+
+	fmt.Println(sun, mon, tues, wed)
 }
